@@ -3,7 +3,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <?php echo ucfirst(basename($_SERVER["SCRIPT_FILENAME"], '.php')); ?>
+        <?php echo ucwords(str_replace('-' , ' ' , basename($_SERVER["SCRIPT_FILENAME"], '.php'))); ?>
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
